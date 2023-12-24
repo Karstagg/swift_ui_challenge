@@ -9,11 +9,8 @@ import SwiftUI
 
 struct HelloSpeakBuddyModal: View {
     var body: some View {
-        GradientBgWrapper(color: Color.speakBuddyBg){
-            ZStack(alignment: .topTrailing) {                
-                Text("Hello SpeakBUDDY")
-                    .padding()
-            }
+        Modal {
+            Text("Hello Speak Buddy")
         }
     }
 }

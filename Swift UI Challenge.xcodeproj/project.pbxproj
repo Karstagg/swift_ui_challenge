@@ -16,6 +16,8 @@
 		5918C8652B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918C8642B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift */; };
 		59525A552B37C1D000FFD278 /* HelloSpeakBuddyModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */; };
 		59525A572B37DB5200FFD278 /* GradientBgWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */; };
+		59525A612B380B1F00FFD278 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A602B380B1F00FFD278 /* RoundButton.swift */; };
+		59525A682B3811BB00FFD278 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A672B3811BB00FFD278 /* Modal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,8 @@
 		5918C8642B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_UI_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSpeakBuddyModal.swift; sourceTree = "<group>"; };
 		59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBgWrapper.swift; sourceTree = "<group>"; };
-		59525A582B37DCB600FFD278 /* FloatingRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingRoundButton.swift; sourceTree = "<group>"; };
+		59525A602B380B1F00FFD278 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		59525A672B3811BB00FFD278 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +102,11 @@
 		5918C8462B36FAF900A7748E /* Swift UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */,
+				59525A622B380FA800FFD278 /* Features */,
 				5918C8472B36FAF900A7748E /* Swift_UI_ChallengeApp.swift */,
 				5918C8492B36FAF900A7748E /* ContentView.swift */,
 				5918C84B2B36FAFB00A7748E /* Assets.xcassets */,
 				5918C84D2B36FAFB00A7748E /* Preview Content */,
-				59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */,
-				59525A582B37DCB600FFD278 /* FloatingRoundButton.swift */,
 			);
 			path = "Swift UI Challenge";
 			sourceTree = "<group>";
@@ -133,6 +134,49 @@
 				5918C8642B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift */,
 			);
 			path = "Swift UI ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		59525A622B380FA800FFD278 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				59525A6B2B381A9D00FFD278 /* HelloSpeakBuddyModal */,
+				59525A632B380FCD00FFD278 /* Common */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		59525A632B380FCD00FFD278 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				59525A662B38118E00FFD278 /* Screens */,
+				59525A642B3810C800FFD278 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		59525A642B3810C800FFD278 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59525A602B380B1F00FFD278 /* RoundButton.swift */,
+				59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59525A662B38118E00FFD278 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				59525A672B3811BB00FFD278 /* Modal.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		59525A6B2B381A9D00FFD278 /* HelloSpeakBuddyModal */ = {
+			isa = PBXGroup;
+			children = (
+				59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */,
+			);
+			path = HelloSpeakBuddyModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59525A592B37DCB600FFD278 /* FloatingRoundButton.swift in Sources */,
+				59525A612B380B1F00FFD278 /* RoundButton.swift in Sources */,
 				59525A552B37C1D000FFD278 /* HelloSpeakBuddyModal.swift in Sources */,
 				5918C84A2B36FAF900A7748E /* ContentView.swift in Sources */,
+				59525A682B3811BB00FFD278 /* Modal.swift in Sources */,
 				59525A572B37DB5200FFD278 /* GradientBgWrapper.swift in Sources */,
 				5918C8482B36FAF900A7748E /* Swift_UI_ChallengeApp.swift in Sources */,
 			);
