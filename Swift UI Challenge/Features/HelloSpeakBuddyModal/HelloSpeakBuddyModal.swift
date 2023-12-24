@@ -10,7 +10,17 @@ import SwiftUI
 struct HelloSpeakBuddyModal: View {
     var body: some View {
         Modal {
-            Text("Hello Speak Buddy")
+            VStack {
+                VStack {
+                    Text("Hello")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    Text("SpeakBUDDY")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                }
+                VStack {
+                    Image("Protty")
+                }
+            }
         }
     }
 }
