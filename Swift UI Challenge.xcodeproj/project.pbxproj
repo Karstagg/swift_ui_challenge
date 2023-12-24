@@ -15,6 +15,7 @@
 		5918C8632B36FAFB00A7748E /* Swift_UI_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918C8622B36FAFB00A7748E /* Swift_UI_ChallengeUITests.swift */; };
 		5918C8652B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918C8642B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift */; };
 		59525A552B37C1D000FFD278 /* HelloSpeakBuddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A542B37C1D000FFD278 /* HelloSpeakBuddy.swift */; };
+		59525A572B37DB5200FFD278 /* GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A562B37DB5200FFD278 /* GradientBg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		5918C8622B36FAFB00A7748E /* Swift_UI_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_UI_ChallengeUITests.swift; sourceTree = "<group>"; };
 		5918C8642B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_UI_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		59525A542B37C1D000FFD278 /* HelloSpeakBuddy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSpeakBuddy.swift; sourceTree = "<group>"; };
+		59525A562B37DB5200FFD278 /* GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				5918C84B2B36FAFB00A7748E /* Assets.xcassets */,
 				5918C84D2B36FAFB00A7748E /* Preview Content */,
 				59525A542B37C1D000FFD278 /* HelloSpeakBuddy.swift */,
+				59525A562B37DB5200FFD278 /* GradientBg.swift */,
 			);
 			path = "Swift UI Challenge";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				59525A552B37C1D000FFD278 /* HelloSpeakBuddy.swift in Sources */,
 				5918C84A2B36FAF900A7748E /* ContentView.swift in Sources */,
+				59525A572B37DB5200FFD278 /* GradientBg.swift in Sources */,
 				5918C8482B36FAF900A7748E /* Swift_UI_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

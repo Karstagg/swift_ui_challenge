@@ -10,10 +10,7 @@ import SwiftUI
 struct HelloSpeakBuddyModal: View {
     var body: some View {
         ZStack(alignment: /*@START_MENU_TOKEN@*/Alignment(horizontal: .center, vertical: .center)/*@END_MENU_TOKEN@*/, content: {
-            LinearGradient(stops: [
-                Gradient.Stop(color: .speakBuddyBg, location: 0.0),
-                Gradient.Stop(color: .white, location: 1),
-            ], startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            GradientBg()
             Text("Hello SpeakBUDDY")
         })
     }
