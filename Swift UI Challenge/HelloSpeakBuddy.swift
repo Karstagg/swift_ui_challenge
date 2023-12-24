@@ -7,16 +7,18 @@
 
 import SwiftUI
 
-struct HelloSpeakBuddy: View {
+struct HelloSpeakBuddyModal: View {
     var body: some View {
-        VStack {
+        ZStack(alignment: /*@START_MENU_TOKEN@*/Alignment(horizontal: .center, vertical: .center)/*@END_MENU_TOKEN@*/, content: {
+            LinearGradient(stops: [
+                Gradient.Stop(color: .speakBuddyBg, location: 0.0),
+                Gradient.Stop(color: .white, location: 1),
+            ], startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Text("Hello SpeakBUDDY")
-        }
-        .padding()
-        .background()
+        })
     }
 }
 
 #Preview {
-    HelloSpeakBuddy()
+    HelloSpeakBuddyModal()
 }
