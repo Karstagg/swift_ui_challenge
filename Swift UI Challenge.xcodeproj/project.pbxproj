@@ -14,8 +14,8 @@
 		5918C8592B36FAFB00A7748E /* Swift_UI_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918C8582B36FAFB00A7748E /* Swift_UI_ChallengeTests.swift */; };
 		5918C8632B36FAFB00A7748E /* Swift_UI_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918C8622B36FAFB00A7748E /* Swift_UI_ChallengeUITests.swift */; };
 		5918C8652B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918C8642B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift */; };
-		59525A552B37C1D000FFD278 /* HelloSpeakBuddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A542B37C1D000FFD278 /* HelloSpeakBuddy.swift */; };
-		59525A572B37DB5200FFD278 /* GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A562B37DB5200FFD278 /* GradientBg.swift */; };
+		59525A552B37C1D000FFD278 /* HelloSpeakBuddyModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */; };
+		59525A572B37DB5200FFD278 /* GradientBgWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,9 @@
 		5918C85E2B36FAFB00A7748E /* Swift UI ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift UI ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5918C8622B36FAFB00A7748E /* Swift_UI_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_UI_ChallengeUITests.swift; sourceTree = "<group>"; };
 		5918C8642B36FAFB00A7748E /* Swift_UI_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_UI_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		59525A542B37C1D000FFD278 /* HelloSpeakBuddy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSpeakBuddy.swift; sourceTree = "<group>"; };
-		59525A562B37DB5200FFD278 /* GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBg.swift; sourceTree = "<group>"; };
+		59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSpeakBuddyModal.swift; sourceTree = "<group>"; };
+		59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBgWrapper.swift; sourceTree = "<group>"; };
+		59525A582B37DCB600FFD278 /* FloatingRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingRoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +99,13 @@
 		5918C8462B36FAF900A7748E /* Swift UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */,
 				5918C8472B36FAF900A7748E /* Swift_UI_ChallengeApp.swift */,
 				5918C8492B36FAF900A7748E /* ContentView.swift */,
 				5918C84B2B36FAFB00A7748E /* Assets.xcassets */,
 				5918C84D2B36FAFB00A7748E /* Preview Content */,
-				59525A542B37C1D000FFD278 /* HelloSpeakBuddy.swift */,
-				59525A562B37DB5200FFD278 /* GradientBg.swift */,
+				59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */,
+				59525A582B37DCB600FFD278 /* FloatingRoundButton.swift */,
 			);
 			path = "Swift UI Challenge";
 			sourceTree = "<group>";
@@ -263,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59525A552B37C1D000FFD278 /* HelloSpeakBuddy.swift in Sources */,
+				59525A592B37DCB600FFD278 /* FloatingRoundButton.swift in Sources */,
+				59525A552B37C1D000FFD278 /* HelloSpeakBuddyModal.swift in Sources */,
 				5918C84A2B36FAF900A7748E /* ContentView.swift in Sources */,
-				59525A572B37DB5200FFD278 /* GradientBg.swift in Sources */,
+				59525A572B37DB5200FFD278 /* GradientBgWrapper.swift in Sources */,
 				5918C8482B36FAF900A7748E /* Swift_UI_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

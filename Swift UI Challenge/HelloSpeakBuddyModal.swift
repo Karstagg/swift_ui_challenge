@@ -9,10 +9,12 @@ import SwiftUI
 
 struct HelloSpeakBuddyModal: View {
     var body: some View {
-        ZStack(alignment: /*@START_MENU_TOKEN@*/Alignment(horizontal: .center, vertical: .center)/*@END_MENU_TOKEN@*/, content: {
-            GradientBg()
-            Text("Hello SpeakBUDDY")
-        })
+        GradientBgWrapper(color: Color.speakBuddyBg){
+            ZStack(alignment: .topTrailing) {                
+                Text("Hello SpeakBUDDY")
+                    .padding()
+            }
+        }
     }
 }
 
