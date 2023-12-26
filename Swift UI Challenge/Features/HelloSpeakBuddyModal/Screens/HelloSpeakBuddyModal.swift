@@ -17,9 +17,19 @@ struct HelloSpeakBuddyModal: View {
                     Text("SpeakBUDDY")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 }
-                VStack {
-                    Image("Protty")
+                ZStack {
+                    HStack {
+                        VStack {
+                            Image("Protty")
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    StudyTimeChart()
+                        .padding(.top, 50)
                 }
+                .frame(maxHeight: 400)
+                .padding()
             }
         }
     }
