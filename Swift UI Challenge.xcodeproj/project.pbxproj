@@ -18,6 +18,8 @@
 		59525A572B37DB5200FFD278 /* GradientBgWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */; };
 		59525A612B380B1F00FFD278 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A602B380B1F00FFD278 /* RoundButton.swift */; };
 		59525A682B3811BB00FFD278 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A672B3811BB00FFD278 /* Modal.swift */; };
+		59525A732B38212C00FFD278 /* YearChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A722B38212C00FFD278 /* YearChart.swift */; };
+		59525A782B3822A500FFD278 /* StudyTimeDatapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59525A772B3822A500FFD278 /* StudyTimeDatapoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		59525A562B37DB5200FFD278 /* GradientBgWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBgWrapper.swift; sourceTree = "<group>"; };
 		59525A602B380B1F00FFD278 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		59525A672B3811BB00FFD278 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		59525A722B38212C00FFD278 /* YearChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearChart.swift; sourceTree = "<group>"; };
+		59525A772B3822A500FFD278 /* StudyTimeDatapoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTimeDatapoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +178,35 @@
 		59525A6B2B381A9D00FFD278 /* HelloSpeakBuddyModal */ = {
 			isa = PBXGroup;
 			children = (
-				59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */,
+				59525A762B38227100FFD278 /* Models */,
+				59525A752B38226400FFD278 /* Views */,
+				59525A742B38224C00FFD278 /* Screens */,
 			);
 			path = HelloSpeakBuddyModal;
+			sourceTree = "<group>";
+		};
+		59525A742B38224C00FFD278 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				59525A542B37C1D000FFD278 /* HelloSpeakBuddyModal.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		59525A752B38226400FFD278 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59525A722B38212C00FFD278 /* YearChart.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59525A762B38227100FFD278 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59525A772B3822A500FFD278 /* StudyTimeDatapoint.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,9 +342,11 @@
 				59525A612B380B1F00FFD278 /* RoundButton.swift in Sources */,
 				59525A552B37C1D000FFD278 /* HelloSpeakBuddyModal.swift in Sources */,
 				5918C84A2B36FAF900A7748E /* ContentView.swift in Sources */,
+				59525A782B3822A500FFD278 /* StudyTimeDatapoint.swift in Sources */,
 				59525A682B3811BB00FFD278 /* Modal.swift in Sources */,
 				59525A572B37DB5200FFD278 /* GradientBgWrapper.swift in Sources */,
 				5918C8482B36FAF900A7748E /* Swift_UI_ChallengeApp.swift in Sources */,
+				59525A732B38212C00FFD278 /* YearChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
