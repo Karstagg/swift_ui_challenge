@@ -33,6 +33,15 @@ struct HelloSpeakBuddyModal: View {
                     }
                     // using the device height for the width is more consistant accross device models
                     .frame(width: deviceHeight * 0.47, height: deviceHeight * 0.50)
+                    VStack {
+                        Text("スピークバディで")
+                        Text("レベルアップ")
+                        Button("プランに登録する") {
+                            
+                        }
+                        .buttonStyle(BlueActionButtonStyle())
+                        .frame(width: deviceHeight * 0.47, height: 56)
+                    }
                 }
             }
         }
