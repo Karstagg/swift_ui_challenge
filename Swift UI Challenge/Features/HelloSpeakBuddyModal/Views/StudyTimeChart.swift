@@ -10,9 +10,9 @@ import Charts
 
 struct StudyTimeChart: View {
     let StudyTimeData: [StudyTimeDatapoint] = [
-        StudyTimeDatapoint(studyTime: "現在", mastery: 15),
-        StudyTimeDatapoint(studyTime: "3ヶ月", mastery: 25),
-        StudyTimeDatapoint(studyTime: "1年", mastery: 75),
+        StudyTimeDatapoint(studyTime: "現在", mastery: 30),
+        StudyTimeDatapoint(studyTime: "3ヶ月", mastery: 42),
+        StudyTimeDatapoint(studyTime: "1年", mastery: 82),
         StudyTimeDatapoint(studyTime: "2年", mastery: 100)
     ]
     var body: some View {
