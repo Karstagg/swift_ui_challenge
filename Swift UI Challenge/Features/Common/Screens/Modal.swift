@@ -24,7 +24,7 @@ struct Modal<Content: View>: View {
                     }
                     .buttonStyle(RoundCloseButtonStyle(width: 38))
                     .padding(.trailing)
-                    .position(x: geometry.size.width - 30, y: 52)
+                    .position(x: geometry.size.width - 30, y: 60)
                 }
             }
         }
