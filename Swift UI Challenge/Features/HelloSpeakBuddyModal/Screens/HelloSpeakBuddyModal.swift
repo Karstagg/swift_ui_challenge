@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HelloSpeakBuddyModal: View {
+    let titleFont = Font.custom("SFProText-Heavy", size: 36)
+    let asss = Font.Design.default
+    let jaFont = Font.custom("HiraginoSans-W6", size: 20)
+    
     var body: some View {
         GeometryReader { geometry in
             let deviceWidth = geometry.size.width
@@ -16,10 +20,10 @@ struct HelloSpeakBuddyModal: View {
                 VStack {
                     VStack {
                         Text("Hello")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         Text("SpeakBUDDY")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     }
+                    .font(.languageSpecificFontOveride(for: .en, size: 36, systemWeight: .bold))
+                    .foregroundColor(.mainFont)
                     ZStack (alignment: Alignment(horizontal: .leading, vertical: .top)) {
                         ZStack {
                             Image("Protty")
@@ -35,12 +39,21 @@ struct HelloSpeakBuddyModal: View {
                     .frame(width: deviceHeight * 0.47, height: deviceHeight * 0.50)
                     VStack {
                         Text("スピークバディで")
+                            .font(.languageSpecificFontOveride(for: .ja, size: 20, customWeight: .medium))
+                            .foregroundColor(.mainFont)
                         Text("レベルアップ")
+                            .font(.languageSpecificFontOveride(for: .ja, size: 30, customWeight: .bold))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [.blueGradientTextTop, .blueGradientTextBottom],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
                         Button("プランに登録する") {
                             
                         }
-                        .buttonStyle(BlueActionButtonStyle())
-                        .frame(width: deviceHeight * 0.47, height: 56)
+                        .buttonStyle(BlueActionButtonStyle(width: deviceHeight * 0.47, height: 56))
                     }
                 }
             }

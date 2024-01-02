@@ -9,15 +9,23 @@ import SwiftUI
 
 
 struct BlueActionButtonStyle: ButtonStyle {
+    let width: CGFloat
+    let height: CGFloat
+    var color: Color = .actionButtonBlue
     func makeBody(configuration: Configuration) -> some View {
-        
         configuration.label
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            .padding()
+            .frame(width: width, height: height)
             .font(.title3)
             .foregroundColor(.white)
-            .background(.actionButtonBlue)
+            .background(color)
             .clipShape(Capsule(style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
+            .shadow(color: .shadow, radius: 10, x: 0, y: 2)
+            .overlay {
+                Capsule(style: .continuous)
+                    .stroke(.white, lineWidth: 1)
+            }
+        
     }
 }
 
@@ -25,6 +33,6 @@ struct BlueActionButtonStyle: ButtonStyle {
     Button("test") {
         print("testing")
     }
-    .buttonStyle(BlueActionButtonStyle())
+    .buttonStyle(BlueActionButtonStyle(width: 200, height: 100, color: Color.red))
     
 }
