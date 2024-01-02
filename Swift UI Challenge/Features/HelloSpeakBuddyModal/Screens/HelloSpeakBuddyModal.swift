@@ -38,23 +38,28 @@ struct HelloSpeakBuddyModal: View {
                     // using the device height for the width is more consistant accross device models
                     .frame(width: deviceHeight * 0.47, height: deviceHeight * 0.50)
                     VStack {
-                        Text("スピークバディで")
-                            .font(.languageSpecificFontOveride(for: .ja, size: 20, customWeight: .medium))
-                            .foregroundColor(.mainFont)
-                        Text("レベルアップ")
-                            .font(.languageSpecificFontOveride(for: .ja, size: 30, customWeight: .bold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: [.blueGradientTextTop, .blueGradientTextBottom],
-                                    startPoint: .top,
-                                    endPoint: .bottom
+                        Spacer()
+                        VStack {
+                            Text("スピークバディで")
+                                .font(.languageSpecificFontOveride(for: .ja, size: 20, customWeight: .medium))
+                                .foregroundColor(.mainFont)
+                            Text("レベルアップ")
+                                .font(.languageSpecificFontOveride(for: .ja, size: 30, customWeight: .bold))
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: [.blueGradientTextTop, .blueGradientTextBottom],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
                                 )
-                            )
+                        }
+                        Spacer()
                         Button("プランに登録する") {
                             
                         }
-                        .buttonStyle(BlueActionButtonStyle(width: deviceHeight * 0.47, height: 56))
+                        .buttonStyle(BlueActionButtonStyle(width: 350, height: 56, buttonFont: .languageSpecificFontOveride(for: .ja, size: 16, customWeight: .medium)))
                     }
+                    .frame(width: 350, height: 200)
                 }
             }
         }

@@ -12,11 +12,12 @@ struct BlueActionButtonStyle: ButtonStyle {
     let width: CGFloat
     let height: CGFloat
     var color: Color = .actionButtonBlue
+    var buttonFont: Font = .title3
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
             .frame(width: width, height: height)
-            .font(.title3)
+            .font(buttonFont)
             .foregroundColor(.white)
             .background(color)
             .clipShape(Capsule(style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))

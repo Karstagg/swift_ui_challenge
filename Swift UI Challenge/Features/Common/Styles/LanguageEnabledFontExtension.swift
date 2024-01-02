@@ -28,6 +28,7 @@ let languageDictionary: [AvailableLanguages: [Weights: String]] =
 ]
 
 // This may not be strictly necessary. It was developed to enforce Japanese text being displayed in Hiragino Sans on non Japanese language devices
+// this could be replaced with a proper localization system in a production app
 extension Font {
     static func languageSpecificFontOveride(for language: AvailableLanguages, size: CGFloat, customWeight: Weights = Weights.regular, systemWeight: Font.Weight = .regular) -> Font {
         
