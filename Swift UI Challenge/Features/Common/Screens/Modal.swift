@@ -14,14 +14,21 @@ struct Modal<Content: View>: View {
         GradientBgWrapper(color: Color.speakBuddyBg){
             ZStack {
                 content
-                HStack {
-                    Spacer()
-                    VStack {
-                        RoundButton(icon: "xmark")
-                        Spacer()
+                GeometryReader { geometry in
+                    Button {
+                    } label: {
+                        Image(systemName: "xmark")
+                            .font(.languageSpecificFontOveride(for: .ja, size: 14, customWeight: .bold))
                     }
+                    .buttonStyle(RoundCloseButtonStyle(width: 38))
+                    .padding(.trailing)
+                    .position(x: geometry.size.width - 30, y: 52)
                 }
             }
         }
     }
+}
+
+#Preview {
+    HelloSpeakBuddyModal()
 }

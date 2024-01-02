@@ -8,10 +8,6 @@
 import SwiftUI
 
 struct HelloSpeakBuddyModal: View {
-    let titleFont = Font.custom("SFProText-Heavy", size: 36)
-    let asss = Font.Design.default
-    let jaFont = Font.custom("HiraginoSans-W6", size: 20)
-    
     var body: some View {
         GeometryReader { geometry in
             let deviceWidth = geometry.size.width
@@ -55,13 +51,17 @@ struct HelloSpeakBuddyModal: View {
                         }
                         Spacer()
                         Button("プランに登録する") {
-                            
+                            //Navigate to plan signup
                         }
                         .buttonStyle(BlueActionButtonStyle(width: 350, height: 56, buttonFont: .languageSpecificFontOveride(for: .ja, size: 16, customWeight: .medium)))
                     }
                     .frame(width: 350, height: 200)
+                    Spacer()
                 }
+                .offset(y: 100)
             }
+            .frame(width: .infinity, height: .infinity)
+            .ignoresSafeArea()
         }
     }
 }
