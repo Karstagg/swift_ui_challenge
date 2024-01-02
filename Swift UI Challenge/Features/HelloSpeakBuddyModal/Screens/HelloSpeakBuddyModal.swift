@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct HelloSpeakBuddyModal: View {
+    @Binding var isPresented: Bool
     var body: some View {
         GeometryReader { geometry in
             let deviceWidth = geometry.size.width
             let deviceHeight = geometry.size.height
-            Modal {
+            Modal (isPresented: $isPresented) {
                 VStack {
                     VStack {
                         Text("Hello")
@@ -66,6 +67,3 @@ struct HelloSpeakBuddyModal: View {
     }
 }
 
-#Preview {
-    HelloSpeakBuddyModal()
-}

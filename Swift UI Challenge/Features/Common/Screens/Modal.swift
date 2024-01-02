@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Modal<Content: View>: View {
+    @Binding var isPresented: Bool
     @ViewBuilder let content: Content
     
     var body: some View {
@@ -16,6 +17,7 @@ struct Modal<Content: View>: View {
                 content
                 GeometryReader { geometry in
                     Button {
+                        isPresented = false
                     } label: {
                         Image(systemName: "xmark")
                             .font(.languageSpecificFontOveride(for: .ja, size: 14, customWeight: .bold))
@@ -29,6 +31,3 @@ struct Modal<Content: View>: View {
     }
 }
 
-#Preview {
-    HelloSpeakBuddyModal()
-}

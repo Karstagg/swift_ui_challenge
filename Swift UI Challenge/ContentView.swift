@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showHelloSpeakBuddyModal: Bool = false
     var body: some View {
         ZStack {
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
+                Text("Hello, world! Press the button to learn about SpeakBUDDY")
+                Button ("Show Modal") {
+                    showHelloSpeakBuddyModal = true
+                }
+                .buttonStyle(BlueActionButtonStyle(width: 200, height: 56))
             }
-            .fullScreenCover(isPresented: /*@START_MENU_TOKEN@*/.constant(true)/*@END_MENU_TOKEN@*/, content: {
-                HelloSpeakBuddyModal()
-            })
+            .fullScreenCover(isPresented: $showHelloSpeakBuddyModal) {
+                HelloSpeakBuddyModal(isPresented: $showHelloSpeakBuddyModal)
+            }
         }
     }
 }
