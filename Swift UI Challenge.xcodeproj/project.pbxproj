@@ -23,6 +23,7 @@
 		59E658F22B4427AF00154B99 /* MasteryChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E658F12B4427AF00154B99 /* MasteryChart.swift */; };
 		59E658F42B4427D900154B99 /* MasteryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E658F32B4427D900154B99 /* MasteryBar.swift */; };
 		59E658F62B4436AD00154B99 /* Mastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E658F52B4436AD00154B99 /* Mastery.swift */; };
+		59E658FB2B451C4B00154B99 /* RoundedCornersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E658FA2B451C4B00154B99 /* RoundedCornersExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		59E658F12B4427AF00154B99 /* MasteryChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteryChart.swift; sourceTree = "<group>"; };
 		59E658F32B4427D900154B99 /* MasteryBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteryBar.swift; sourceTree = "<group>"; };
 		59E658F52B4436AD00154B99 /* Mastery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastery.swift; sourceTree = "<group>"; };
+		59E658FA2B451C4B00154B99 /* RoundedCornersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		59525A632B380FCD00FFD278 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				59E658F92B451C0500154B99 /* Extensions */,
 				597FD78F2B3C13ED00F9036E /* Styles */,
 				59525A662B38118E00FFD278 /* Screens */,
 				59525A642B3810C800FFD278 /* Views */,
@@ -226,6 +229,14 @@
 				597FD7972B43EFD500F9036E /* RoundCloseButtonStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		59E658F92B451C0500154B99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59E658FA2B451C4B00154B99 /* RoundedCornersExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +379,7 @@
 				59525A682B3811BB00FFD278 /* Modal.swift in Sources */,
 				59525A572B37DB5200FFD278 /* GradientBgWrapper.swift in Sources */,
 				597FD78E2B3AB6C700F9036E /* BlueActionButtonStyle.swift in Sources */,
+				59E658FB2B451C4B00154B99 /* RoundedCornersExtension.swift in Sources */,
 				5918C8482B36FAF900A7748E /* Swift_UI_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

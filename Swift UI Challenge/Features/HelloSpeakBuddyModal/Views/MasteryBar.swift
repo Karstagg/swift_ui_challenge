@@ -24,6 +24,7 @@ struct MasteryBar: View {
                             Gradient.Stop(color: .chartBarTop, location: 0.0),
                             Gradient.Stop(color: .chartBarBottom, location: 1),
                         ], startPoint: .top, endPoint: .bottom)))
+                        .cornerRadius(2.73, corners: [.topLeft, .topRight])
                         .onAppear {
                             let animation = Animation.easeInOut
                             
