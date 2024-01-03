@@ -14,7 +14,7 @@ struct HelloSpeakBuddyModal: View {
             let deviceWidth = geometry.size.width
             let deviceHeight = geometry.size.height
             Modal (isPresented: $isPresented) {
-                VStack {
+                VStack (spacing: deviceHeight * 0.07) {
                     VStack {
                         Text("Hello")
                         Text("SpeakBUDDY")
@@ -28,14 +28,15 @@ struct HelloSpeakBuddyModal: View {
                                 .aspectRatio(contentMode: .fit)
                         }
                         .frame(height: deviceHeight * 0.217)
-                        StudyTimeChart()
+                        .padding(.top, 33)
+                        MasteryChart(width: deviceHeight * 0.47, height: deviceHeight * 0.45)
                             .padding(.top, deviceHeight * 0.1)
                             .padding(.horizontal, deviceWidth * 0.05)
                     }
                     // using the device height for the width is more consistant accross device models
-                    .frame(width: deviceHeight * 0.47, height: deviceHeight * 0.50)
-                    VStack {
-                        Spacer()
+                    .frame(width: deviceHeight * 0.47, height: deviceHeight * 0.45)
+                    .padding(.bottom, 40)
+                    VStack (spacing: 40) {
                         VStack {
                             Text("スピークバディで")
                                 .font(.languageSpecificFontOveride(for: .ja, size: 20, customWeight: .medium))
@@ -50,19 +51,18 @@ struct HelloSpeakBuddyModal: View {
                                     )
                                 )
                         }
-                        Spacer()
+                        
                         Button("プランに登録する") {
                             //Navigate to plan signup
                         }
                         .buttonStyle(BlueActionButtonStyle(width: 350, height: 56, buttonFont: .languageSpecificFontOveride(for: .ja, size: 16, customWeight: .medium)))
+                       
                     }
-                    .frame(width: 350, height: 200)
-                    Spacer()
                 }
-                .offset(y: 100)
             }
-            .frame(width: .infinity, height: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
+            
         }
     }
 }
