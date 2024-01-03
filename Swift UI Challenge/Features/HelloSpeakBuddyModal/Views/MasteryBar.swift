@@ -25,9 +25,9 @@ struct MasteryBar: View {
                             Gradient.Stop(color: .chartBarBottom, location: 1),
                         ], startPoint: .top, endPoint: .bottom)))
                         .onAppear {
-                            let animation = Animation.easeInOut(duration: 0.5)
+                            let animation = Animation.easeInOut
                             
-                            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1 + delay) {
                                 withAnimation(animation) {
                                     animationHeight = height
                                 }
